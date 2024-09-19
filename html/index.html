@@ -5,24 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Git</title>
     <link rel="stylesheet" href="../css/styles.css">
-    
-    
 </head>
 <body>
-
     <header>
-
         <h1>Learn Git</h1>
-
     </header>
-
     <section id="basic-commands">
-
         <h2>Basic Commands</h2>
         <p>Git is a distributed version control system. Here are some basic commands to get you started:</p>
-
         <ul>
-
             <li><code>git status</code>: Show the working directory status.</li>
             <li><code>git add [file]</code>: Add a file to the staging area.</li>
             <li><code>git commit -m "message"</code>: Commit changes with a message.</li>
@@ -31,49 +22,54 @@
             <li><code>git clone [url]</code>: Clone a repository into a new directory.</li>
             <li><code>git init</code>: Create an empty Git repository or reinitialize an existing one.</li>
             <li><code>git log</code>: Show the commit logs.</li>
-
         </ul>
-
     </section>
-
     <section id="branching">
-
         <h2>Branching</h2>
         <p>Branches in Git allow you to work on different versions of a project simultaneously. Here are some commands related to branching:</p>
-
         <ul>
-
             <li><code>git branch</code>: List all branches.</li>
             <li><code>git branch [branch-name]</code>: Create a new branch.</li>
             <li><code>git checkout [branch-name]</code>: Switch to a branch.</li>
             <li><code>git checkout -b [branch-name]</code>: Create and switch to a new branch.</li>
             <li><code>git branch -d [branch-name]</code>: Delete a branch.</li>
             <li><code>git branch -D [branch-name]</code>: Force delete a branch.</li>
-
         </ul>
-
     </section>
-
     <section id="merging">
-
         <h2>Merging</h2>
         <p>Merging is the process of combining changes from different branches. Here are some commands related to merging:</p>
-
         <ul>
-
             <li><code>git merge [branch-name]</code>: Merge the specified branch into the current branch.</li>
             <li><code>git rebase [branch-name]</code>: Reapply commits on top of another base tip.</li>
             <li><code>git merge --abort</code>: Abort the merge process and try to reconstruct the pre-merge state.</li>
             <li><code>git rebase --abort</code>: Abort the rebase process and return to the pre-rebase state.</li>
-
         </ul>
-
     </section>
-
+    <section id="feature-merge">
+        <h2>Showcase: Merging New Features into Master</h2>
+        <div class="showcase">
+            <div class="showcase-text">
+                <p>When working on a new feature, you typically create a new branch from the master branch. Once the feature is complete, you merge it back into the master branch. Here are the steps:</p>
+                <ol>
+                    <li>Switch to the master branch: <code>git checkout master</code></li>
+                    <li>Pull the latest changes: <code>git pull</code></li>
+                    <li>Switch to your feature branch: <code>git checkout [feature-branch]</code></li>
+                    <li>Merge the master branch into your feature branch to resolve any conflicts: <code>git merge master</code></li>
+                    <li>Switch back to the master branch: <code>git checkout master</code></li>
+                    <li>Merge your feature branch into the master branch: <code>git merge [feature-branch]</code></li>
+                    <li>Push the changes to the remote repository: <code>git push</code></li>
+                </ol>
+            </div>
+            <div class="showcase-image">
+                <img src="merge-illustration.png" alt="Merging Illustration">
+            </div>
+        </div>
+    </section>
     <button id="git-tip-button">Show Git Tip</button>
-
-
-        <script src="../js/script.js"></script>
-
+    <footer id="footer">
+        <p>&copy; 2023 Learn Git</p>
+    </footer>
+    <script src="../js/script.js"></script>
 </body>
 </html>
