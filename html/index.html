@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Git</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    
+</head>
+<body>
+
+    <header>
+
+        <h1>Learn Git</h1>
+
+    </header>
+
+    <section id="basic-commands">
+
+        <h2>Basic Commands</h2>
+        <p>Git is a distributed version control system. Here are some basic commands to get you started:</p>
+
+        <ul>
+
+            <li><code>git status</code>: Show the working directory status.</li>
+            <li><code>git add [file]</code>: Add a file to the staging area.</li>
+            <li><code>git commit -m "message"</code>: Commit changes with a message.</li>
+            <li><code>git push</code>: Push changes to the remote repository.</li>
+            <li><code>git pull</code>: Pull changes from the remote repository.</li>
+            <li><code>git clone [url]</code>: Clone a repository into a new directory.</li>
+            <li><code>git init</code>: Create an empty Git repository or reinitialize an existing one.</li>
+            <li><code>git log</code>: Show the commit logs.</li>
+
+        </ul>
+
+    </section>
+
+    <section id="branching">
+
+        <h2>Branching</h2>
+        <p>Branches in Git allow you to work on different versions of a project simultaneously. Here are some commands related to branching:</p>
+
+        <ul>
+
+            <li><code>git branch</code>: List all branches.</li>
+            <li><code>git branch [branch-name]</code>: Create a new branch.</li>
+            <li><code>git checkout [branch-name]</code>: Switch to a branch.</li>
+            <li><code>git checkout -b [branch-name]</code>: Create and switch to a new branch.</li>
+            <li><code>git branch -d [branch-name]</code>: Delete a branch.</li>
+            <li><code>git branch -D [branch-name]</code>: Force delete a branch.</li>
+
+        </ul>
+
+    </section>
+
+    <section id="merging">
+
+        <h2>Merging</h2>
+        <p>Merging is the process of combining changes from different branches. Here are some commands related to merging:</p>
+
+        <ul>
+
+            <li><code>git merge [branch-name]</code>: Merge the specified branch into the current branch.</li>
+            <li><code>git rebase [branch-name]</code>: Reapply commits on top of another base tip.</li>
+            <li><code>git merge --abort</code>: Abort the merge process and try to reconstruct the pre-merge state.</li>
+            <li><code>git rebase --abort</code>: Abort the rebase process and return to the pre-rebase state.</li>
+
+        </ul>
+
+    </section>
+
+    <button id="git-tip-button">Show Git Tip</button>
+
+
+        <script src="../js/script.js"></script>
+
+</body>
+</html>
